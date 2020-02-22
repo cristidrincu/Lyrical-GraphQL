@@ -6,9 +6,8 @@ const bodyParser = require('body-parser');
 const schema = require('./schema/schema');
 
 const app = express();
-
 // Replace with your mongoLab URI
-const MONGO_URI = '';
+const MONGO_URI = 'mongodb://testuser:testuser1234@ds237192.mlab.com:37192/graphql-test';
 if (!MONGO_URI) {
   throw new Error('You must provide a MongoLab URI');
 }
