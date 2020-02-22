@@ -43,6 +43,6 @@ class SongCreate extends Component {
   }
 }
 
-//TODO - the graphql wrapper from react-apollo will provide us the mutate function - it can be accesses from this.props.mutate
+//TODO - the graphql wrapper from react-apollo will provide us the mutate function - it can be accessed from this.props.mutate
 //TODO - the mutate function is actually the mutation we defined with gql (see queries.js->createSong) - all we have to do is provide the variables in the react component -> newSongTitle
 export default graphql(createSong)(SongCreate);
